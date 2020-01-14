@@ -3,6 +3,19 @@
 	<head>
 		<title>Generaed music samples</title>
 	</head>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.onload = prepare_data
+		function prepare_data(){
+			var rows = 20
+			for(var i=0;i<rows;i++){
+				var row_content = '<tr><td><audio src="./assets/music/'+String(i)+'-A.wav" controls="controls">Your browser does not support the audio element.</audio></td><td><audio src="./assets/music/'+String(i)+'-B.wav" controls="controls">Your browser does not support the audio element.</td><td><audio src="./assets/music/'+String(i)+'-X.wav" controls="controls">Your browser does not support the audio element.</td></tr>';
+				$('#tab1').append(row_content);
+				var row_content = '<tr><td><audio src="./assets/music/'+String(i)+'-A.wav" controls="controls">Your browser does not support the audio element.</audio></td><td><audio src="./assets/music/'+String(i)+'-X.wav" controls="controls">Your browser does not support the audio element.</td></tr>';
+				$('#tab2').append(row_content);
+			}
+		}
+	</script>
 	<body>
 		<h1>
 		Generaed music samples
@@ -10,7 +23,7 @@
 		<h2>
 			ABX Test
 		</h2>
-		<table style="text-align:center" border="1">
+		<table id="tab1" style="text-align:center" border="1">
 			<tr>
 				<td>
 					A(Raw music)
@@ -22,57 +35,12 @@
 					X(Generated music)
 				</td>
 			</tr>
-			<tr>
-				<td><audio src="./assets/music/0-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/0-B.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-				<td><audio src="./assets/music/0-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/1-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/1-B.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-				<td><audio src="./assets/music/1-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/2-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/2-B.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-				<td><audio src="./assets/music/2-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/3-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/3-B.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-				<td><audio src="./assets/music/3-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/4-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/4-B.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-				<td><audio src="./assets/music/4-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
 		</table>
 
 		<h2>
 			Mos Test
 		</h2>
-		<table style="text-align:center" border="1">
+		<table id="tab2" style="text-align:center" border="1">
 			<tr>
 				<td>
 					A(Raw music)
@@ -80,41 +48,6 @@
 				<td>
 					X(Generated music)
 				</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/5-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/5-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/6-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/6-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/7-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/7-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/8-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/8-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
-			</tr>
-			<tr>
-				<td><audio src="./assets/music/9-A.wav" controls="controls">
-					Your browser does not support the audio element.
-				</audio></td>
-				<td><audio src="./assets/music/9-X.wav" controls="controls">
-				Your browser does not support the audio element.</td>
 			</tr>
 		</table>
 	</body>
